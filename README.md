@@ -3,7 +3,7 @@ An immersive GSAP-powered travel slider showcasing breathtaking destinations wit
 
 
 ## 🚀 Live Demo
-
+https://3dplaceslider.pages.dev/
 
 ## 💻 Tech Used
 - HTML

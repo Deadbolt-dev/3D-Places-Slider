@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Animated Cards Opening</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+    <div class="indicator"></div>
+
+    <div id="demo"></div>
+
+    <div class="details" id="details-even">
+      <div class="place-box">
+        <div class="text">Switzerland Alps</div>
+      </div>
+      <div class="title-box-1"><div class="title-1">SAINT</div></div>
+      <div class="title-box-2"><div class="title-2">ANTONIEN</div></div>
+      <div class="desc">
+        Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.
+      </div>
+      <div class="cta">
+        <button class="bookmark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <button class="discover">Discover Location</button>
+      </div>
+    </div>
+
+    <div class="details" id="details-odd">
+      <div class="place-box">
+        <div class="text">Switzerland Alps</div>
+      </div>
+      <div class="title-box-1"><div class="title-1">SAINT </div></div>
+      <div class="title-box-2"><div class="title-2">ANTONIEN</div></div>
+      <div class="desc">
+        Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.
+      </div>
+      <div class="cta">
+        <button class="bookmark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <button class="discover">Discover Location</button>
+      </div>
+    </div>
+
+    <div class="pagination" id="pagination">
+      <div class="arrow arrow-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </div>
+      <button class="pause-play-btn" id="pause-play-btn" aria-label="Pause">
+        <!-- Pause icon (shown by default) -->
+        <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd" />
+        </svg>
+        <!-- Play icon (hidden by default) -->
+        <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+          <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+        </svg>
+      </button>
+      <div class="arrow arrow-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </div>
+      <div class="progress-sub-container" >
+        <div class="progress-sub-background" >
+            <div class="progress-sub-foreground" ></div>
+        </div>
+    </div>
+    <div class="slide-numbers" id="slide-numbers"></div>
+    </div>
+
+    <div class="cover" ></div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
